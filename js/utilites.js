@@ -9,9 +9,14 @@ document.getElementById('history-contain-btn').addEventListener('click', functio
 
 
 
-function setContainerActiveBtn (id){
-    document.getElementById('donation-contain-btn').classList.add('btn-outline');
-    document.getElementById('history-contain-btn').classList.add('btn-outline');
-    // remove class name
-    document.getElementById(id).classList.remove('btn-outline')
-}
+document.getElementById('flood-at-noakhali-btn').addEventListener('click', function(){
+    const noakhaliInputFiled = document.getElementById('flood-at-noakhali-input-filed');
+    const noakhaliInputValue = parseFloat(noakhaliInputFiled.value);
+    let noakhaliDonateBalance = document.getElementById('noakhali-donate-balance');
+    let noakhaliDonateBalanceNum = parseFloat(noakhaliDonateBalance.innerText);
+    noakhaliDonateBalance.innerText = noakhaliInputValue + noakhaliDonateBalanceNum;
+
+    let myCurrentBalance = document.getElementById('my-balance');
+    let myCurrentBalanceText = parseFloat(myCurrentBalance.innerText);
+    myCurrentBalance.innerText = myCurrentBalanceText - noakhaliInputValue;
+})
