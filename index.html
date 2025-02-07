@@ -37,7 +37,7 @@
                 <button id="history-contain-btn" class="btn btn-outline btn-success">History</button>
             </div>
          </section>
-         <section class="container mb-12">
+         <section id="donate-card" class="container mb-12">
             <!-- item -1 -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 md:gap-8 shadow-xl mt-14 border border-gray-300 p-6 rounded-xl">
                 <figure class="lg:col-span-5">
@@ -48,7 +48,7 @@
                         <img src="./assets/coin.png" alt="">
                         <h5><span id="noakhali-donate-balance">0</span> BDT</h5>
                     </div>
-                    <h2 class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <h2 id="donate-title" class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h2>
                     <p class="font-light text-sm"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                     <input id="flood-at-noakhali-input-filed" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full" />
                     <button id="flood-at-noakhali-btn" class="btn btn-success w-full">Donate Now</button>
@@ -64,7 +64,7 @@
                         <img src="./assets/coin.png" alt="">
                         <h5><span id="feni-donate-balance">0</span> BDT</h5>
                     </div>
-                    <h2 class="font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</h2>
+                    <h2 id="feni-title" class="font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</h2>
                     <p class="font-light text-sm"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                     <input id="feni-input-field" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full" />
                     <button id="feni-donate-btn" class="btn btn-success w-full">Donate Now</button>
@@ -81,7 +81,7 @@
                         <img src="./assets/coin.png" alt="">
                         <h5><span id="aid-donate-balance">0</span> BDT</h5>
                     </div>
-                    <h2 class="font-bold text-xl">Aid for Injured in the Quota Movement</h2>
+                    <h2 id="aid-title" class="font-bold text-xl">Aid for Injured in the Quota Movement</h2>
                     <p class="font-light text-sm"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                     <input id="aid-donate-input-field" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full" />
                     <button id="aid-donate-btn" class="btn btn-success w-full">Donate Now</button>
@@ -90,23 +90,8 @@
          </section>
 
          <!-- history section -->
-          <section class="container space-y-6">
-            <div class="border border-gray-200 rounded-lg p-6 space-y-4">
-                <h4 class="font-bold text-xl"><span>96500 Taka </span><span>is Donated for famine-2024 at Feni, Bangladesh</span></h4>
-                <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
-            </div>
-            <div class="border border-gray-200 rounded-lg p-6">
-                <h4 class="font-bold text-xl"><span>96500 Taka </span><span>is Donated for famine-2024 at Feni, Bangladesh</span></h4>
-                <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
-            </div>
-            <div class="border border-gray-200 rounded-lg p-6">
-                <h4 class="font-bold text-xl"><span>96500 Taka </span><span>is Donated for famine-2024 at Feni, Bangladesh</span></h4>
-                <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
-            </div>
-            <div class="border border-gray-200 rounded-lg p-6">
-                <h4 class="font-bold text-xl"><span>96500 Taka </span><span>is Donated for famine-2024 at Feni, Bangladesh</span></h4>
-                <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
-            </div>
+          <section id="history-card" class="container space-y-6 hidden  mt-14">
+            
           </section>
     </main>
     <!-- script connect -->
