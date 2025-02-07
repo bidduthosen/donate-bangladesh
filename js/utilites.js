@@ -25,3 +25,8 @@ document.getElementById('aid-donate-btn').addEventListener('click', function(){
     
 })
 
+
+// navigate to blog
+document.getElementById('blog').addEventListener('click', function(){
+    window.location.href = 'blog.html'
+})
