@@ -14,6 +14,16 @@ function getDonationBalanceSetById (inputField, DonateId, myBalance){
     const inputFiled = document.getElementById(inputField);
     const inputValue = parseFloat(inputFiled.value);
 
+    const myBalanceAmount = document.getElementById('my-balance');
+    const myBalanceText = parseFloat(myBalanceAmount.innerText);
+    
+    // validation
+
+    if(isNaN(inputValue) || myBalanceText < inputValue){
+        alert('plz type a number')
+        return;
+    }
+
     let donateBalance = document.getElementById(DonateId);
     let noakhaliDonateBalanceNum = parseFloat(donateBalance.innerText);
     donateBalance.innerText = inputValue + noakhaliDonateBalanceNum;
